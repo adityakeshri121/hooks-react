@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import './App.css';
+import RefHook from './RefHook';
 
 function App() {
   const [number, setNumber] = useState(0);
@@ -33,6 +34,7 @@ function App() {
         <button onClick={() => setDark(prev => !prev)}>Toggle Theme</button>
         <div style={themeStyles}>{doubleNumber}</div>
       </div>
+      <RefHook />
     </div>
   );
 }
